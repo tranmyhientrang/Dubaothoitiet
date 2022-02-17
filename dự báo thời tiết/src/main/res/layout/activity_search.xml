@@ -1,0 +1,241 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/may"
+    android:orientation="vertical"
+    tools:context=".Search">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        >
+
+        <ImageButton
+            android:id="@+id/cancelButton"
+            android:layout_width="46dp"
+            android:layout_height="46dp"
+            android:layout_marginStart="343dp"
+            android:onClick="cancelButtonPressed"
+            android:backgroundTint="@android:color/transparent"
+            app:srcCompat="@android:drawable/ic_menu_close_clear_cancel"
+            tools:ignore="SpeakableTextPresentCheck,SpeakableTextPresentCheck" />
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="0dp"
+            android:fontFamily="sans-serif"
+            android:text="Enter city name"
+            android:textColor="@color/colorWhite"
+            android:textSize="20dp"
+            android:textStyle="bold"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal"
+            android:weightSum="100">
+
+                <EditText
+                    android:id="@+id/cityName"
+                    android:layout_width="289dp"
+                    android:layout_height="48dp"
+                    android:layout_marginTop="10dp"
+                    android:background="@drawable/round"
+                    android:hint="  Search"
+                    app:strokeColor="@color/colorWhite"
+                    app:strokeWidth="2dp"
+                    android:textColor="@color/colorWhite"
+                    android:textColorHint="@color/colorOffWhite" />
+
+                <ImageButton
+                    android:id="@+id/listen"
+                    android:layout_width="48dp"
+                    android:layout_height="48dp"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="5dp"
+                    android:backgroundTint="@android:color/transparent"
+                    android:src="@android:drawable/ic_btn_speak_now"
+                    app:strokeColor="@color/colorWhite"
+                    app:strokeWidth="2dp" />
+
+                <Button
+                    android:id="@+id/goButton"
+                    android:layout_width="wrap_content"
+                    android:layout_height="48dp"
+                    android:layout_marginTop="10dp"
+                    android:backgroundTint="#DB7093"
+                    android:onClick="goButtonPressed"
+                    android:text="Go!"
+                    android:background="@drawable/round"
+                    android:textColor="@color/colorWhite" />
+            </LinearLayout>
+
+
+                <LinearLayout
+                    android:id="@+id/row2"
+                    android:layout_width="match_parent"
+                    android:layout_height="80dp"
+                    android:layout_marginTop="20dp"
+                    android:orientation="horizontal">
+
+                    <LinearLayout
+                        android:layout_width="271dp"
+                        android:layout_height="80dp"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:id="@+id/timeCity1"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="15dp"
+                            android:layout_marginTop="5dp"
+                            android:textColor="@color/colorWhite"/>
+                        <TextView
+                            android:id="@+id/favorCity1"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="15dp"
+                            android:layout_marginTop="5dp"
+                            android:textSize="30dp"
+                            android:textColor="@color/colorWhite"/>
+
+                    </LinearLayout>
+
+                    <TextView
+                        android:id="@+id/tempCity1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginRight="15dp"
+                        android:gravity="center"
+                        android:layout_weight="0.5"
+                        android:textColor="@color/colorWhite"
+                        android:textSize="45dp"
+                        android:textStyle="bold">
+
+                    </TextView>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/row3"
+                    android:layout_marginTop="5dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="80dp"
+                    android:orientation="horizontal">
+
+                    <LinearLayout
+                        android:layout_width="271dp"
+                        android:layout_height="80dp"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:id="@+id/timeCity2"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="15dp"
+                            android:layout_marginTop="5dp"
+                            android:textColor="@color/colorWhite"/>
+                        <TextView
+                            android:id="@+id/favorCity2"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="15dp"
+                            android:layout_marginTop="5dp"
+                            android:textSize="30dp"
+                            android:textColor="@color/colorWhite"/>
+
+                    </LinearLayout>
+
+                    <TextView
+                        android:id="@+id/tempCity2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginRight="15dp"
+                        android:gravity="center"
+                        android:layout_weight="0.5"
+                        android:textColor="@color/colorWhite"
+                        android:textSize="45dp"
+                        android:textStyle="bold">
+
+                    </TextView>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/row4"
+                    android:layout_marginTop="5dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="80dp"
+                    android:orientation="horizontal">
+
+                    <LinearLayout
+                        android:layout_width="271dp"
+                        android:layout_height="80dp"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:id="@+id/timeCity3"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="15dp"
+                            android:layout_marginTop="5dp"
+                            android:textColor="@color/colorWhite"/>
+                        <TextView
+                            android:id="@+id/favorCity3"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="15dp"
+                            android:layout_marginTop="5dp"
+                            android:textSize="30dp"
+                            android:textColor="@color/colorWhite"/>
+
+                    </LinearLayout>
+
+                    <TextView
+                        android:id="@+id/tempCity3"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginRight="15dp"
+                        android:gravity="center"
+                        android:layout_weight="0.5"
+                        android:textColor="@color/colorWhite"
+                        android:textSize="45dp"
+                        android:textStyle="bold">
+
+                    </TextView>
+
+            </LinearLayout>
+
+            <ImageButton
+                android:id="@+id/reset"
+                android:layout_width="48dp"
+                android:layout_height="48dp"
+                android:layout_marginLeft="343dp"
+                android:layout_marginTop="240dp"
+                android:onClick="resetButtonPressed"
+                android:src="@drawable/sweepp"
+                android:visibility="invisible"
+                />
+
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+
